@@ -1,0 +1,10 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: catalog-api-local-4
+  description: Service generated from the DevPath service template.
+spec:
+  type: service
+  owner: guests
+  lifecycle: experimental
+  system: devpath-platform

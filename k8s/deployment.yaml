@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: catalog-api-local-4
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: catalog-api-local-4
+  template:
+    metadata:
+      labels:
+        app: catalog-api-local-4
+    spec:
+      containers:
+        - name: catalog-api-local-4
+          image: nginx:stable
+          ports:
+            - containerPort: 80
