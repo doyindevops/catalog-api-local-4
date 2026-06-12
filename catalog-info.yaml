@@ -1,10 +1,12 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: catalog-api-local-4
-  description: Service generated from the DevPath service template.
+  name: catalog-api
+  description: Demo API service deployed via GitOps on DevPath IDP
+  annotations:
+    github.com/project-slug: doyindevops/catalog-api-local-4
 spec:
   type: service
+  lifecycle: production
   owner: guests
-  lifecycle: experimental
   system: devpath-platform
